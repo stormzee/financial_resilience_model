@@ -1,0 +1,76 @@
+Algorithms 
+
+*  Data type – representation of data and operations performed on the data.
+* primitive data types – int, boolean, float, string etc…
+
+ADT (abstract data types)
+* hiding internal details of the data.
+* adt supports – type of data represented, operations performed, parameters for the operation
+
+Things to consider when using adt
+* Data – memory space, size or capacity
+* operations – search, insert, delete, length
+e.g. storing the names of employees in a program. For such instances, arrays or linked lists can be used.
+ADT are data types that are created by the programmer used to stored data in a programming lang.
+
+LIST
+* ordered sequence of data
+* mutable
+* fixed length
+* zero based indexing
+
+Algorithm Analysis
+* Time complexity
+	-Used to determine the time taken for the algorithm to finish execution.
+	- Time complexity increases with increase in size of input data.
+	- time is measured using experimental analysis and theoretical analysis..
+- Experimental method uses test examples to test the performance of the algorithm
+-Theoretical method uses mathematical 
+* Space complexity
+	Used to determine the amount of memory used by the algorithm.
+
+Order of Growth of Algorithms
+* Exponential = 2^n
+* Cubic = n^3
+* Quadratic = n^2
+* N-log-N = nlog(n), linear logarithmic uses the divide and conquer technique..
+* Linear = n
+* Logarithmic = logN
+* Constant = 1
+
+
+Asymptotic Analysis(approaching a value)
+- The behavior when the input size of an algorithm increases.
+* Best case – where the input is the lower bound.. for instance when searching for a value in an array the value is found at the first index.
+
+* worst case – when the value(key) is located at the upper bound.
+* Average case – when the value is found somewhere in between the upper and lower bound of the array.
+
+Asymptotic Notations
+- Big-Oh notation is used to measure the upper bound(used to describe the worst case), it also expresses the rate of growth
+- Big-Omega is used to measure the lower bound (used to describe the best case)
+-Big-Theta – measures the growth in the upper and lower bound
+
+Big-Oh Notation O()
+linear search - 
+best case = omega(1)
+worst case = O(n)
+Average case = theta(n)
+
+Performance classification
+constant
+logarithmic
+linear
+n-log-n
+Quadratic
+cubic
+Exponential
+
+Memory Space Complexity (memory consumption during execution)
+
+Memory allocation and consumption is dependent on the programming lang used to implement the algorithm.
+
+Recursion
+-Function makes a call to itself.
+-There should be a base case which evaluates to false for the recursive function to stop.
+-   

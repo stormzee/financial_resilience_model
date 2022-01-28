@@ -16,11 +16,13 @@ def load_utils():
 @app.get("/")
 def index():
     model =  load_utils()
-    final_prediction = model.predict(np.array([2,2,2,4,4,4,1,4]).reshape(1,-1))[0]
-    explanations = str()
-    if final_prediction == 0:
-        explanations = "You're not Financially Resilient"
+    final_prediction = model.predict(np.array([1,2,1,4,1,4,1,1]).reshape(1,-1))[0]
     explanations = "financially resilient"
+    
+    
+    if not final_prediction :
+        explanations = "You're not Financially Resilient"
+        
     return {"final_prediction" : int(final_prediction), "Interpretation":explanations}
     
 
